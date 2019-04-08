@@ -20808,3 +20808,290 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-04-07 23:55:51 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_nav.html.erb (0.9ms)
+  Rendered welcome/_scroll-button.html.erb (0.4ms)
+  Rendered welcome/_footer.html.erb (0.2ms)
+  Rendered welcome/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 363ms (Views: 341.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-07 23:55:54 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_nav.html.erb (0.6ms)
+  Rendered welcome/_scroll-button.html.erb (0.3ms)
+  Rendered welcome/_footer.html.erb (0.2ms)
+  Rendered welcome/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-07 23:55:56 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_nav.html.erb (0.6ms)
+  Rendered welcome/_scroll-button.html.erb (0.3ms)
+  Rendered welcome/_footer.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 33ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for ::1 at 2019-04-07 23:55:57 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered welcome/_nav.html.erb (0.5ms)
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:14
+  Rendered welcome/_scroll-button.html.erb (0.3ms)
+  Rendered welcome/_footer.html.erb (0.2ms)
+  Rendered articles/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 53ms (Views: 39.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles/new" for ::1 at 2019-04-07 23:56:00 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered welcome/_nav.html.erb (0.5ms)
+  Rendered articles/_form.html.erb (11.2ms)
+  Rendered welcome/_footer.html.erb (0.2ms)
+  Rendered articles/new.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 72ms (Views: 68.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for ::1 at 2019-04-07 23:56:00 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered welcome/_nav.html.erb (0.5ms)
+  Rendered articles/_form.html.erb (2.0ms)
+  Rendered welcome/_footer.html.erb (0.2ms)
+  Rendered articles/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 40ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for ::1 at 2019-04-07 23:56:02 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered welcome/_nav.html.erb (1.7ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:14
+  Rendered welcome/_scroll-button.html.erb (0.3ms)
+  Rendered welcome/_footer.html.erb (0.4ms)
+  Rendered articles/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 61ms (Views: 57.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/8" for ::1 at 2019-04-07 23:56:11 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  Rendered welcome/_nav.html.erb (0.6ms)
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 8]]
+  ↳ app/views/articles/show.html.erb:21
+  Rendered collection of comments/_comment.html.erb [1 times] (11.4ms)
+  Rendered comments/_form.html.erb (3.0ms)
+  Rendered welcome/_scroll-button.html.erb (0.2ms)
+  Rendered welcome/_footer.html.erb (0.3ms)
+  Rendered articles/show.html.erb within layouts/application (56.4ms)
+Completed 200 OK in 96ms (Views: 84.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/articles/17" for ::1 at 2019-04-07 23:56:18 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  Rendered welcome/_nav.html.erb (1.4ms)
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 17]]
+  ↳ app/views/articles/show.html.erb:21
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (2.4ms)
+  Rendered welcome/_scroll-button.html.erb (0.5ms)
+  Rendered welcome/_footer.html.erb (0.2ms)
+  Rendered articles/show.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 51ms (Views: 45.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles" for ::1 at 2019-04-07 23:56:21 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendered welcome/_nav.html.erb (1.4ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:14
+  Rendered welcome/_scroll-button.html.erb (0.4ms)
+  Rendered welcome/_footer.html.erb (0.5ms)
+  Rendered articles/index.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 69ms (Views: 65.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/19" for ::1 at 2019-04-07 23:56:30 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  Rendered welcome/_nav.html.erb (0.5ms)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 19]]
+  ↳ app/views/articles/show.html.erb:21
+  Rendered collection of comments/_comment.html.erb [2 times] (0.7ms)
+  Rendered comments/_form.html.erb (1.9ms)
+  Rendered welcome/_scroll-button.html.erb (0.2ms)
+  Rendered welcome/_footer.html.erb (0.2ms)
+  Rendered articles/show.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 47ms (Views: 41.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-04-07 23:58:45 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/articles" for ::1 at 2019-04-07 23:58:45 -0400
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+Processing by ArticlesController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_nav.html.erb (0.6ms)
+  Rendered welcome/_scroll-button.html.erb (0.2ms)
+  Rendered welcome/_footer.html.erb (0.2ms)
+  Rendered welcome/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 328ms (Views: 308.0ms | ActiveRecord: 0.0ms)
+
+
+  Rendering articles/index.html.erb within layouts/application
+  Rendered welcome/_nav.html.erb (0.3ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:14
+  Rendered welcome/_scroll-button.html.erb (0.0ms)
+  Rendered welcome/_footer.html.erb (0.0ms)
+  Rendered articles/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 349ms (Views: 37.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles/8" for ::1 at 2019-04-07 23:58:50 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  Rendered welcome/_nav.html.erb (0.6ms)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 8]]
+  ↳ app/views/articles/show.html.erb:21
+  Rendered collection of comments/_comment.html.erb [1 times] (1.6ms)
+  Rendered comments/_form.html.erb (5.9ms)
+  Rendered welcome/_scroll-button.html.erb (0.2ms)
+  Rendered welcome/_footer.html.erb (0.2ms)
+  Rendered articles/show.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 65ms (Views: 56.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-04-08 08:32:07 -0400
+Started GET "/articles" for ::1 at 2019-04-08 08:32:07 -0400
+Started GET "/articles/8" for ::1 at 2019-04-08 08:32:07 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ArticlesController#index as HTML
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+Processing by WelcomeController#index as HTML
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/index.html.erb within layouts/application
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendering articles/show.html.erb within layouts/application
+  ↳ app/views/articles/index.html.erb:25
+  Rendered welcome/_scroll-button.html.erb (0.3ms)
+  Rendered welcome/_scroll-button.html.erb (0.0ms)
+  Rendered welcome/_footer.html.erb (0.4ms)
+  Rendered welcome/_footer.html.erb (0.0ms)
+  Rendered articles/index.html.erb within layouts/application (19.3ms)
+  Rendered welcome/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 511ms (Views: 480.1ms | ActiveRecord: 0.2ms)
+
+
+Completed 200 OK in 479ms (Views: 476.9ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 8]]
+  ↳ app/views/articles/show.html.erb:32
+  Rendered collection of comments/_comment.html.erb [1 times] (1.9ms)
+  Rendered comments/_form.html.erb (11.4ms)
+  Rendered welcome/_scroll-button.html.erb (0.0ms)
+  Rendered welcome/_footer.html.erb (0.0ms)
+  Rendered articles/show.html.erb within layouts/application (498.7ms)
+Completed 200 OK in 559ms (Views: 527.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/articles" for ::1 at 2019-04-08 08:32:20 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered welcome/_scroll-button.html.erb (0.4ms)
+  Rendered welcome/_footer.html.erb (0.4ms)
+  Rendered articles/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 45ms (Views: 42.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/8/edit" for ::1 at 2019-04-08 08:32:23 -0400
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:17
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (2.4ms)
+  Rendered welcome/_footer.html.erb (0.2ms)
+  Rendered articles/edit.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 39ms (Views: 33.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for ::1 at 2019-04-08 08:32:25 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered welcome/_scroll-button.html.erb (0.4ms)
+  Rendered welcome/_footer.html.erb (0.5ms)
+  Rendered articles/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 48ms (Views: 44.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for ::1 at 2019-04-08 08:32:26 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (1.9ms)
+  Rendered welcome/_footer.html.erb (0.2ms)
+  Rendered articles/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 40ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for ::1 at 2019-04-08 08:32:30 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:25
+  Rendered welcome/_scroll-button.html.erb (0.5ms)
+  Rendered welcome/_footer.html.erb (0.4ms)
+  Rendered articles/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 43ms (Views: 40.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-04-08 08:32:33 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_scroll-button.html.erb (0.4ms)
+  Rendered welcome/_footer.html.erb (0.7ms)
+  Rendered welcome/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 51ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+
+

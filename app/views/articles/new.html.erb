@@ -1,4 +1,15 @@
-<%= render 'welcome/nav' %>
+<nav class="blog-masthead navbar-fixed-top">
+  <div class="container">
+    <header class="blog-nav-header">
+      <span class="blog-nav-brand"><%= link_to 'Harry\'s Blog', root_path %></span>
+    </header>
+    <ul class="blog-nav">
+      <li class='blog-nav-item'><%= link_to 'Home', root_path %></li>
+      <li class='blog-nav-item'><%= link_to 'Diary', articles_path %></li>
+      <li class="blog-nav-item active"><%= link_to 'New Article', new_article_path %></li>
+    </ul>
+  </div>
+</nav>
 
 <div class="container content">
   <header class="blog-header">
