@@ -5,10 +5,12 @@ This simple blog realized the following functionalities: navigation bar, footer,
 * Authentication User Name: harrylaw
 * Authentication Password: harrylaw
 
-** Configurations **
+****Configurations
 1. Install Ruby version 2.2.2 or later
 2. Install SQLite3
 3. Install Rails
 4. Starting up the Web Server
-   cd to blog/
+
+   cd to Personal-Diary/
+   
    $ bin/rails server
