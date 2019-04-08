@@ -1,2 +1,39 @@
-<h1>Welcome to Harry's Blog!</h1>
-<%= link_to 'My Diary', controller: 'articles' %>
+<%= render 'nav' %>
+
+<div class="container content">
+  <header class="blog-header">
+    <h1 class="blog-title">Home Page</h1>
+    <p class="lead blog-description">
+      Welcome to Harry's Blog!
+    </p>
+  </header>
+
+  <div class="row">
+    <section class="col-sm-8 blog-main">
+      <p>This simple blog realized the following functionalities: navigation bar, footer, scroll to top/bottom button, password authentication for certain functionalities, preview all entries in the diary, read one entry in the diary, create a new entry in the diary (authentication required), edit an existing entry in the diary (authentication required), delete an existing entry in the diary (authentication required), make a comment for a diary entry, delete an existing comment for a diary entry (authentication required).</p>
+
+      <p>Authentication User Name: harrylaw <br> Authentication Password: harrylaw</p>
+
+      <p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ipsum neque. Ut sed scelerisque est. Pellentesque mattis metus quis est scelerisque dictum. Phasellus eu tempus diam. Vestibulum pretium eleifend nibh, sit amet laoreet nibh tristique sed. Nunc commodo lacinia libero quis gravida. Nunc tempor lectus sit amet purus accumsan eleifend. Aliquam in odio at est vestibulum condimentum sed eu metus. Aenean molestie lorem a mauris commodo, pharetra posuere elit ornare. Nullam at dapibus eros. Ut quis magna luctus, efficitur metus eget, lacinia massa. Integer in erat vulputate, congue nibh in, bibendum enim. Quisque malesuada eleifend leo, eget feugiat eros consectetur sed. Suspendisse eleifend elit at nulla blandit porta.
+      </p>
+      <p>
+Proin mollis augue interdum tortor consectetur, non egestas ex bibendum. Donec fermentum molestie nibh, ac porttitor lectus luctus sit amet. Nam dictum efficitur velit, vel porta ante vehicula nec. Duis id ullamcorper justo. Pellentesque et leo sit amet velit consequat mattis eget sit amet diam. Praesent eget sem velit. Aenean sollicitudin gravida molestie. Donec tempor tortor eget lacus gravida facilisis. Nunc non ultrices augue. Integer justo libero, malesuada quis massa eu, tempor bibendum ante. Aliquam erat volutpat. Morbi scelerisque ac magna a auctor. Sed turpis neque, rhoncus vel diam quis, accumsan blandit quam. Ut et auctor diam.
+      </p>
+      <p>
+Pellentesque fermentum luctus mollis. Curabitur hendrerit tortor a nisl imperdiet lobortis. Donec porta pulvinar accumsan. In lorem tortor, porttitor ut condimentum nec, commodo eget nisl. Integer ultricies mollis gravida. Praesent dolor urna, suscipit vitae pharetra vel, rutrum non risus. Fusce consectetur, justo eu ultricies tincidunt, odio eros varius ipsum, sed rutrum quam diam quis ipsum.
+      </p>
+      <p>
+Sed efficitur quam quis viverra iaculis. Etiam at mauris lectus. Morbi a metus ac diam rhoncus luctus. Curabitur et risus arcu. Duis finibus tristique nulla, et tristique nulla lacinia at. Vivamus quis elementum urna. Nam volutpat porttitor ante porttitor dictum. Nullam diam ligula, vulputate et libero vel, gravida pellentesque urna. Quisque lacinia neque et risus euismod, mollis iaculis justo interdum. Cras facilisis bibendum maximus. Maecenas eleifend euismod eros a molestie.
+      </p>
+      <p>
+Vestibulum consequat rhoncus odio eu lacinia. Curabitur rhoncus porttitor maximus. Phasellus velit odio, vestibulum non rhoncus sit amet, porttitor eget arcu. Mauris luctus accumsan nunc, sed scelerisque sem malesuada sit amet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce congue a neque eget aliquet. Suspendisse iaculis purus in condimentum dictum. Aliquam at orci tristique, consectetur dui a, aliquam ipsum. Quisque accumsan quam a erat tempor dignissim. Nunc rhoncus posuere lorem, id porttitor mauris laoreet vel. Nullam molestie egestas eros commodo aliquam. Vivamus pellentesque purus sed rutrum tempus.
+      </p>
+    </section> <!-- /.blog-main -->
+
+    <%= render 'scroll-button' %>
+
+  </div> <!-- /.row -->
+</div> <!-- /.container /.content -->
+
+<%= render 'footer' %>

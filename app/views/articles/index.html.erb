@@ -1,21 +1,33 @@
-<h1>Harry's Diary</h1>
-<%= link_to 'New article', new_article_path %>
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-    <th colspan="3"></th>
-  </tr>
+<%= render 'welcome/nav' %>
+
+<div class="container content">
+  <header class="blog-header">
+    <h1 class="blog-title">Diary</h1>
+    <p class="lead blog-description">
+      Keep up with Harry's daily life :)
+    </p>
+  </header>
+
+  <div class="row">
+    <section class="col-sm-8 blog-main">
  
-  <% @articles.each do |article| %>
-    <tr>
-      <td><%= article.title %></td>
-      <td><%= article.text %></td>
-      <td><%= link_to 'Show', article_path(article) %></td>
-      <td><%= link_to 'Edit', edit_article_path(article) %></td>
-      <td><%= link_to 'Destroy', article_path(article),
+    <% @articles.each do |article| %>
+      <article class='blog-post'>
+      <h2 class='blog-post-title'><%= article.title %></h2>
+      <p><%= article.text %></p>
+      <%= link_to 'Show', article_path(article) %> |
+      <%= link_to 'Edit', edit_article_path(article) %> |
+      <%= link_to 'Delete', article_path(article),
               method: :delete,
-              data: { confirm: 'Are you sure?' } %></td>
-    </tr>
-  <% end %>
-</table>
+              data: { confirm: 'Are you sure?' } %>
+      </article>
+    <% end %>
+
+    <%= link_to 'Back to Homepage', root_path %>
+
+    <%= render 'welcome/scroll-button' %>
+
+  </div> <!-- /.row -->
+</div> <!-- /.container /.content -->
+
+<%= render 'welcome/footer' %>

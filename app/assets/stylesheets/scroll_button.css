@@ -1,0 +1,26 @@
+.scroll-to-top, .scroll-to-bottom {
+    position: fixed;
+    right: 3em;
+    /*width: 40px;*/
+    /*height: 40px;*/
+    /*background-images: url(../images/scroll_to_top.png);*/
+    /*border-radius: 15px;*/
+    /*border: 1px solid #CCCCCC;*/
+    background-color: rgb(122, 122, 122);
+    color: white;
+}
+
+.scroll-to-top {
+    bottom: 4em;
+    display: none;
+}
+
+.scroll-to-bottom {
+    bottom: 1em;
+}
+
+.scroll-to-top:hover, .scroll-to-bottom:hover {
+    /*background-images: url(../images/scroll_to_top_hover.png);*/
+    background-color: black;
+    color: white;
+}

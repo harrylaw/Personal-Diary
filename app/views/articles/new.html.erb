@@ -1,5 +1,19 @@
-<h1>New article</h1>
+<%= render 'welcome/nav' %>
+
+<div class="container content">
+  <header class="blog-header">
+    <h1 class="blog-title">
+      New Article
+    </h1>
+
+    <p class="lead blog-description">
+      Create a New Entry in the Diary
+    </p>
+  </header>
  
 <%= render 'form' %>
  
-<%= link_to 'Back', articles_path %>
+<%= link_to 'Back to Diary', articles_path %>
+</div>
+
+<%= render 'welcome/footer' %>
